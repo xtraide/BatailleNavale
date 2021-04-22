@@ -1,5 +1,6 @@
 package game;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Grid {
@@ -10,8 +11,10 @@ public class Grid {
 		mat = new int[GRID_SIZE][GRID_SIZE];
 		initMat();
 	}
-	private int initMat() {
-		return 0;
+	private void initMat() {
+		for ( int i=0; i<mat.length; i++ ) {
+		    mat[i][i] = 0;
+		}
 	}
 	
 	public void randomInit() {
