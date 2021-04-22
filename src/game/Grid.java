@@ -10,7 +10,8 @@ public class Grid {
 		mat = new int[GRID_SIZE][GRID_SIZE];
 		initMat();
 	}
-	private void initMat() {
+	private int initMat() {
+		return 0;
 	}
 	
 	public void randomInit() {
